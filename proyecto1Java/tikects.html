@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar Tickets</title>
+    <link rel="icon" type="image/ico" href="Imagenes/favicon.ico">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-izquierda">
+            <h1>Conf Bs As</h1>
+        </div>
+        <nav class="header-derecha">
+            <ul>
+                <li>
+                    <b>La conferencia</b>
+                </li>
+                <li>
+                    <a href=".#Oradores">Los Oradores</a>
+                </li>
+                <li>El Luga y la fecha</li>
+                <li>
+                    <a href=".#Formulario">Conviértete en orador</a>
+                </li>
+                <li id="tickets1">
+                    <a href="./tickets.html">Comprar tickets</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="cuerpoTickets">
+        <section class="categorias">
+            <div class="estudiante">
+                <p>Estudiante</p>
+                <p>Tiene un descuento</p>
+                <p>80%</p>
+                <p>* presentar documentación</p>
+            </div>
+            <div class="trainee">
+                <p>Trainee</p>
+                <p>Tiene un descuento</p>
+                <p>50%</p>
+                <p>* presentar documentación</p>
+            </div>
+            <div class="junior">
+                <p>Junior</p>
+                <p>Tiene un descuento</p>
+                <p>15%</p>
+                <p>* presentar documentación</p>
+            </div>            
+        </section>
+
+        <h4>VENTA</h4>
+        <H1>VALOR DE TICKETS $200 </H1>
+        <form action="datos.html" target="-blank">
+            <input type="text" name="Nombre" id="campo1" required placeholder="Nombre">
+            <input type="text" name="Apellido" id="campo2" required placeholder="Apellido"> <br>
+            <input type="text" name="Correo" id="campo4" required placeholder="Correo">
+
+            <br>
+            <div id="cantCat">
+                <p>Cantidad <br><input type="number" name="cantidad" id="campo5" required placeholder="Cantidad"></p>
+            <p>Categoría
+                <br>
+                <select name="categoria" id="campo6">
+                    <option value="estudiante">Estudiante</option>
+                    <option value="trainee">Trainee</option>
+                    <option value="junior">Junior</option>
+                </select>
+            </p>
+            </div>
+            
+
+            <p class="total">Total a Pagar: $</p>
+
+            <button type="reset" class="compra">Borrar</button>
+            <button type="submit" class="compra">Resumen</button>
+    </main>
+    </form>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Contáctanos</a></li>
+                <li><a href="#">Prensa</a></li>
+                <li><a href="#">Conferencias</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Privacidad</a></li>
+                <li><a href="#">Estudiantes</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
